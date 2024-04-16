@@ -9,7 +9,7 @@ class Campania(models.Model):
     beneficiario = models.CharField(max_length=150)
     monto_recaudar = models.DecimalField(max_digits=9, decimal_places=2)
     monto_recaudado = models.DecimalField(max_digits=9, decimal_places=2)
-    fecha_inicio = models.DateTimeField(auto_now_add=True)
+    fecha_inicio = models.DateTimeField()
     fecha_cierre = models.DateTimeField()
     estado = models.BooleanField()
     fecha_registro = models.DateTimeField(auto_now_add=True)
